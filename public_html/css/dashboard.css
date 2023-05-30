@@ -1,0 +1,255 @@
+/* reseting */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+}
+html{
+
+    background-color: #161616;
+}
+body {
+    background-color: #161616;
+    color: white;
+    overflow: hidden;
+}
+
+div#dashboard-header {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+}
+
+svg#back-Btn {
+    left: 49px;
+    position: relative;
+    top: 31px;
+    color: white;
+}
+
+/* Dashboard */
+a#dashboard-link {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+#dashboard {
+    background: linear-gradient(102deg, rgb(197 197 197 / 83%) -6.99%, rgb(52 52 52 / 69%) 53.22%, rgb(120 120 120 / 34%) 105.24%);
+    /* backdrop-filter: blur(12px); */
+    padding: 12px;
+    /* border: none; */
+    /* border-radius: 11px; */
+    /* background-color: white; */
+    color: white;
+    width: 97%;
+    margin: 20px 5px;
+    /* background: rgb(255 255 255 / 14%); */
+    /* box-shadow: 3px 3px 12px 2px rgb(255 255 255 / 18%); */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 16px;
+    border: 1px solid rgb(255 255 255 / 40%);
+}
+#dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 66px 0 0 0;
+    min-height: 90vh;
+}
+
+#img1 {
+    height: 179px;
+    width: 354px;
+    border-radius: 11px;
+    margin: 0 29px 0 0;
+    border: 2px solid white;
+}
+
+#info-container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 70%;
+}
+
+#all-info {
+    display: flex;
+}
+
+#movie-info-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 66%;
+}
+
+#movie-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.div1 {
+    font-size: 1.5rem;
+    display: flex;
+}
+
+#movie-info,
+#ticket-info {
+    margin: 0 28px 0 0;
+}
+
+#ticket-info-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* width: 40%; */
+}
+
+#ticketImg,
+#movieImg {
+    height: 35px;
+}
+
+/* Media queries */
+
+
+@media only screen and (max-width: 1190px) {
+
+    #info-container {
+        flex-direction: column;
+    }
+
+    #all-info {
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #movie-info {
+        margin: 0 0 38px 0;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    #all-info {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #img1 {
+        margin: 0 0 16px 0;
+    }
+
+    div#info-container {
+        text-align: center;
+        width: unset;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    * {
+        font-size: 1rem;
+    }
+
+    #img1 {
+        width: 100%;
+        height: auto;
+    }
+
+    #ticketImg,
+    #movieImg {
+        height: 30px;
+    }
+
+    .div1 {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    #movie-info {
+        margin: 0 0 11px 0;
+        display: block;
+    }
+
+    #ticketImg,
+    #movieImg {
+        height: 26px;
+    }
+
+    .div1 {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media only screen and (max-width: 290px) {
+    * {
+        font-size: 0.9rem;
+    }
+
+    #ticketImg,
+    #movieImg {
+        height: 24px;
+    }
+
+}
+
+
+.ticketdash {
+    font-size: 1rem;
+    color: white;
+    border: 1px solid white;
+    background: red;
+    border-radius: 6px;
+    padding: 1px 10px;
+}
+
+/* top button */
+#topbtn {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    text-decoration: none;
+  }
+  #topbtn::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #topbtn:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #topbtn:active {
+    background-color: #555;
+  }
+  #topbtn.show {
+    opacity: 1;
+    visibility: visible;
+  }

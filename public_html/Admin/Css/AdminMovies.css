@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root {
+    --background-color: #212529;
+    --main-color: #D72323;
+    --primary-color: #EEEEEE;
+    --secondary-color: #3A4750;
+    --grey-color: #d3d3d3;
+    --PrimaryFont: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    height: 1100px;
+    position: relative;
+    background-color: var(--background-color);
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    color: red;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.heading {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3.5rem;
+}
+
+.subheading1 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.content::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    background-color: #D62929;
+}
+
+.subheading2 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.normaltext {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.paragraph {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.minitext {
+    /* used = 'ex. Thriller/Adventure/Drama' purposes   */
+    position: relative;
+    color: var(--grey-color);
+    font-size: 1.6rem;
+}
+
+#header {
+    height: 60px;
+    background-color: #1b1b1b;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 200px !important;
+    height: 45px !important;
+    width: 254px;
+    height: 60px;
+    object-fit: contain;
+}
+
+#header .visitwebsite {
+    height: 40px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--main-color);
+    color: var(--primary-color);
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    border-radius: 12px;
+    margin-left: 100px;
+}
+
+#parentContainer {
+    position: relative;
+    top: 70px;
+    width: 100vw;
+    height: 1200px;
+    display: flex;
+    gap: 20px;
+}
+
+#parentContainer .AdminOptions {
+    width: 300px;
+    height: 100%;
+    border-radius: 12px;
+}
+
+#parentContainer .Moviedetails {
+    width: 1000px;
+    height: 80%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.AdminOptions .optionList {
+    margin: 0;
+    padding: 0;
+}
+
+.AdminOptions .optionList .opt {
+    list-style: none;
+    /* background-color: #264653; */
+    background-color: white;
+    color: var(--background-color);
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid white;
+}
+
+.opt.active {
+    background-color: var(--main-color) !important;
+    color: white !important;
+}
+
+#parentContainer .Moviedetails .MoviesContainer {
+    width: 96%;
+    height: 47%;
+    border: 1px solid white;
+    border-radius: 12px;
+    background-color: white;
+    overflow: auto;
+}
+
+#parentContainer .Moviedetails .MoviesContainer .heading {
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.MoviesContainer .heading h3 {
+    font-size: 20px;
+    font-family: var(--PrimaryFont);
+    color: black;
+    margin-left: 20px;
+}
+
+.MoviesContainer .heading .add {
+    margin-right: 20px;
+    color: black;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+}
+
+.MoviesContainer .content {
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+    background-color: #f1faee;
+}
+
+.MoviesContainer .content .NWmovies,
+.MoviesContainer .content .UCmovies {
+    padding: 6px;
+    border-bottom: 1px solid var(--background-color);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--PrimaryFont);
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.MoviesContainer .content .NWmovies .moviedetails {
+    height: 95%;
+    width: 500px;
+    margin-left: 10px;
+}
+
+.MoviesContainer .content .NWmovies h3 {
+    font-family: var(--PrimaryFont);
+    color: black;
+    font-size: 18px;
+}
+
+.MoviesContainer .content .NWmovies .upmovieop {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.MoviesContainer .content .NWmovies .moviename {
+    font-family: var(--PrimaryFont) !important;
+    color: var(--main-color) !important;
+    font-size: 24px !important;
+    font-weight: 900;
+}
+
+.MoviesContainer .content .NWmovies img {
+    height: 95%;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.MoviesContainer .content .NWmovies .delete,
+.MoviesContainer .content .UCmovies .delete {
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: var(--PrimaryFont);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.AdminOptions .optionList .opt i {
+    margin-right: 20px;
+}

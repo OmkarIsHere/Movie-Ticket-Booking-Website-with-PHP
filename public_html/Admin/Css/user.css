@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root {
+    --background-color: #212529;
+    --main-color: #D72323;
+    --primary-color: #EEEEEE;
+    --secondary-color: #3A4750;
+    --grey-color: #d3d3d3;
+    --PrimaryFont: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100vw;
+    height: 800px;
+    position: relative;
+    background-color: var(--background-color) !important;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.heading {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3.5rem;
+}
+
+.subheading1 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.subheading2 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.normaltext {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.paragraph {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.minitext {
+    /* used = 'ex. Thriller/Adventure/Drama' purposes   */
+    position: relative;
+    color: var(--grey-color);
+    font-size: 1.6rem;
+}
+
+#header {
+    height: 60px;
+    background-color: #1b1b1b;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 200px !important;
+    height: 45px !important;
+    width: 254px;
+    height: 60px;
+    object-fit: contain;
+}
+
+#header .visitwebsite {
+    height: 40px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--main-color);
+    color: var(--primary-color);
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    border-radius: 12px;
+    margin-left: 100px;
+}
+
+#parentContainer {
+    position: relative;
+    top: 70px;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    gap: 20px;
+   
+}
+
+#parentContainer .AdminOptions {
+    width: 300px;
+    height: 100%;
+    border-radius: 12px;
+}
+
+#parentContainer .Theaterdetails {
+    width: 1000px;
+    height: 80%;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.AdminOptions .optionList {
+    margin: 0;
+    padding: 0;
+}
+
+.AdminOptions .optionList .opt {
+    list-style: none;
+    /* background-color: #264653; */
+    background-color: white;
+    color: var(--background-color);
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 600;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid white;
+}
+
+.opt.active {
+    background-color: var(--main-color) !important;
+    color: white !important;
+}
+
+.AdminOptions .optionList .opt i {
+    margin-right: 20px;
+}
+
+#parentContainer .Theaterdetails .theaterHeading {
+    width: 100%;
+}
+
+#parentContainer .Theaterdetails .theaterHeading h3 {
+    font-family: var(--PrimaryFont);
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+#parentContainer .Theaterdetails .TheaterOptions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#parentContainer .Theaterdetails .TheaterOptions .ThSearch {
+    width: 250px;
+    height: 50px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#parentContainer .Theaterdetails .TheaterOptions .ThSearch input {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-family: var(--PrimaryFont);
+    font-weight: 600;
+    padding-inline-start: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#parentContainer .Theaterdetails .TheaterOptions .ThAddtheaters {
+    width: 300px;
+    height: 50px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#parentContainer .Theaterdetails .TheaterOptions .ThAddtheaters .btn {
+    background-color: white;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--PrimaryFont);
+    font-weight: 600;
+    align-items: center;
+    margin-right: 4px;
+}
+
+th,
+td {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+tr{
+    
+  height:30px;
+}
+.table{
+    overflow-y:auto;
+}
+
+.form-check {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+#parentContainer .Theaterdetails .theatersTable {
+    width: 96%;
+    height: 80%;
+    margin-top: 10px;
+    margin-left: 17px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid blue;
+     overflow-y:auto;
+}

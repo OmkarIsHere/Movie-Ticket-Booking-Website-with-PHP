@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root {
+    --background-color: #212529;
+    --main-color: #D72323;
+    --primary-color: #EEEEEE;
+    --secondary-color: #3A4750;
+    --grey-color: #d3d3d3;
+    --PrimaryFont: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+html,
+body {
+    max-width: 100vw;
+    height: 1000px;
+    position: relative;
+    background-color: var(--background-color);
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    margin-left: 0;
+    color: white;
+    margin-right: 0;
+}
+
+.heading {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3.5rem;
+}
+
+.subheading1 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.subheading2 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.normaltext {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.paragraph {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.minitext {
+    /* used = 'ex. Thriller/Adventure/Drama' purposes   */
+    position: relative;
+    color: var(--grey-color);
+    font-size: 1.6rem;
+}
+
+#header {
+    height: 60px;
+    background-color: #1b1b1b;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 200px !important;
+    height: 45px !important;
+    width: 254px;
+    height: 60px;
+    object-fit: contain;
+}
+
+#header .visitwebsite {
+    height: 40px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--main-color);
+    color: var(--primary-color);
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    border-radius: 12px;
+    margin-left: 100px;
+}
+
+#parentContainer {
+    position: relative;
+    top: 70px;
+    width: 100vw;
+    overflow-y: hidden;
+    height: 900px;
+    display: flex;
+    gap: 20px;
+}
+
+#parentContainer .AdminOptions {
+    width: 300px;
+    height: 100%;
+    border-radius: 12px;
+}
+
+#parentContainer .AddMovies {
+    width: 1000px;
+    height: 100%;
+    overflow-y: auto;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.AdminOptions .optionList {
+    margin: 0;
+    padding: 0;
+}
+
+.AdminOptions .optionList .opt {
+    list-style: none;
+    /* background-color: #264653; */
+    background-color: white;
+    color: var(--background-color);
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.opt.active {
+    background-color: var(--main-color) !important;
+    color: white !important;
+}
+
+.AddMovieheading {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.AddMovieheading h3 {
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: var(--PrimaryFont);
+}
+
+#crew .submitform,
+#cast .submitform,
+.formElementsSubmit .submitform {
+    height: 40px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--main-color);
+    color: var(--primary-color);
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    border-radius: 12px;
+    margin-left: 100px;
+    border: none;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.formElementsSubmit {
+    display: flex;
+    justify-content: end;
+}
+
+.AdminOptions .optionList .opt i {
+    margin-right: 20px;
+}
+
+#crew,
+#cast {
+    width: 100%;
+    height: 40%;
+}
+
+#crew h3,
+#cast h3 {
+    font-family: var(--PrimaryFont);
+    font-size: 25px;
+    font-weight: 800;
+    margin-left: 50px;
+}
+
+#crew .submitform,
+#cast .submitform {
+    background-color: var(--main-color) !important;
+    color: white;
+    width: 100px !important;
+    height: 30px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#crew .heading,
+#cast .heading {
+    width: 99%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+#crew .container,
+#cast .container {
+    width: 99%;
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 285px;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.cancel {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+.extracrew {
+    overflow-y: auto;
+}
+
+.CastBox,
+.CrewBox {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.parts {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parts h3 {
+    font-family: var(--PrimaryFont);
+    font-size: 18px !important;
+    font-weight: 800;
+    color: black;
+    margin-left: 10px !important;
+}
+
+.parts input {
+    margin-left: 10px;
+    width: 90%;
+    height: 40px;
+    outline: none;
+    font-family: var(--PrimaryFont);
+    font-size: 18px !important;
+    font-weight: 800;
+    border-radius: 5px;
+    padding-inline-start: 5px;
+    border: 2px solid black;
+}
+
+.parts .inputImage {
+    position: relative;
+    top: 5px;
+    color: black;
+    border: none !important;
+}
+
+
+/* loader animation ------------------------------*/
+
+@keyframes ldio-gydubrlv2y9 {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.ldio-gydubrlv2y9 div {
+    box-sizing: border-box!important
+}
+
+.ldio-gydubrlv2y9>div {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    top: 14px;
+    left: 14px;
+    border-radius: 50%;
+    border: 8px solid #000;
+    border-color: #d72323 transparent #d72323 transparent;
+    animation: ldio-gydubrlv2y9 1s linear infinite;
+}
+
+.ldio-gydubrlv2y9>div:nth-child(2) {
+    border-color: transparent
+}
+
+.ldio-gydubrlv2y9>div:nth-child(2) div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+}
+
+.ldio-gydubrlv2y9>div:nth-child(2) div:before,
+.ldio-gydubrlv2y9>div:nth-child(2) div:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: -8px;
+    left: 24px;
+    background: #d72323;
+    border-radius: 50%;
+    box-shadow: 0 64px 0 0 #d72323;
+}
+
+.ldio-gydubrlv2y9>div:nth-child(2) div:after {
+    left: -8px;
+    top: 24px;
+    box-shadow: 64px 0 0 0 #d72323;
+}
+
+.loadingio-spinner-dual-ring-pi6b1155i7 {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.ldio-gydubrlv2y9 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+    /* see note above */
+}
+
+.ldio-gydubrlv2y9 div {
+    box-sizing: content-box;
+}
+
+
+/* generated by https://loading.io/ */
+
+
+/* --------------------- */

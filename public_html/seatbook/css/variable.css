@@ -1,0 +1,673 @@
+/* all this are the variables which are required to change the color of seats which are already booked. */
+:root {
+    --a1: ;
+    --a2: ;
+    --a3: ;
+    --a4: ;
+    --a5: ;
+    --a6: ;
+    --a7: ;
+    --a8: ;
+    --a9: ;
+    --a10: ;
+    --a11: ;
+    --a12: ;
+
+    --b1: ;
+    --b2: ;
+    --b3: ;
+    --b4: ;
+    --b5: ;
+    --b6: ;
+    --b7: ;
+    --b8: ;
+    --b9: ;
+    --b10: ;
+    --b11: ;
+    --b12: ;
+
+    --c1: ;
+    --c2: ;
+    --c3: ;
+    --c4: ;
+    --c5: ;
+    --c6: ;
+    --c7: ;
+    --c8: ;
+    --c9: ;
+    --c10: ;
+    --c11: ;
+    --c12: ;
+
+    --d1: ;
+    --d2: ;
+    --d3: ;
+    --d4: ;
+    --d5: ;
+    --d6: ;
+    --d7: ;
+    --d8: ;
+    --d9: ;
+    --d10: ;
+    --d11: ;
+    --d12: ;
+
+    --e1: ;
+    --e2: ;
+    --e3: ;
+    --e4: ;
+    --e5: ;
+    --e6: ;
+    --e7: ;
+    --e8: ;
+    --e9: ;
+    --e10: ;
+    --e11: ;
+    --e12: ;
+
+    --f1: ;
+    --f2: ;
+    --f3: ;
+    --f4: ;
+    --f5: ;
+    --f6: ;
+    --f7: ;
+    --f8: ;
+    --f9: ;
+    --f10: ;
+    --f11: ;
+    --f12: ;
+
+    --g1: ;
+    --g2: ;
+    --g3: ;
+    --g4: ;
+    --g5: ;
+    --g6: ;
+    --g7: ;
+    --g8: ;
+    --g9: ;
+    --g10: ;
+    --g11: ;
+    --g12: ;
+
+    --h1: ;
+    --h2: ;
+    --h3: ;
+    --h4: ;
+    --h5: ;
+    --h6: ;
+    --h7: ;
+    --h8: ;
+    --h9: ;
+    --h10: ;
+    --h11: ;
+    --h12: ;
+
+    --i1: ;
+    --i2: ;
+    --i3: ;
+    --i4: ;
+    --i5: ;
+    --i6: ;
+    --i7: ;
+    --i8: ;
+    --i9: ;
+    --i10: ;
+    --i11: ;
+    --i12: ;
+
+    --j1: ;
+    --j2: ;
+    --j3: ;
+    --j4: ;
+    --j5: ;
+    --j6: ;
+    --j7: ;
+    --j8: ;
+    --j9: ;
+    --j10: ;
+    --j11: ;
+    --j12: ;
+
+    --k1: ;
+    --k1: ;
+    --k1: ;
+    --k1: ;
+    --k1: ;
+    --k1: ;
+    --k1: ;
+    --k1: ;
+    --k1: ;
+    --k10: ;
+    --k11: ;
+    --k12: ;
+}
+
+#a1:before {
+    background: var(--a1);
+}
+
+#a2:before {
+    background: var(--a2);
+}
+
+#a3:before {
+    background: var(--a3);
+}
+
+#a4:before {
+    background: var(--a4);
+}
+
+#a5:before {
+    background: var(--a5);
+}
+
+#a6:before {
+    background: var(--a6);
+}
+
+#a7:before {
+    background: var(--a7);
+}
+
+#a8:before {
+    background: var(--a8);
+}
+
+#a9:before {
+    background: var(--a9);
+}
+
+#a10:before {
+    background: var(--a10);
+}
+
+#a11:before {
+    background: var(--a11);
+}
+
+#a12:before {
+    background: var(--a12);
+}
+
+#b1:before {
+    background: var(--b1);
+}
+
+#b2:before {
+    background: var(--b2);
+}
+
+#b3:before {
+    background: var(--b3);
+}
+
+#b4:before {
+    background: var(--b4);
+}
+
+#b5:before {
+    background: var(--b5);
+}
+
+#b6:before {
+    background: var(--b6);
+}
+
+#b7:before {
+    background: var(--b7);
+}
+
+#b8:before {
+    background: var(--b8);
+}
+
+#b9:before {
+    background: var(--b9);
+}
+
+#b10:before {
+    background: var(--b10);
+}
+
+#b11:before {
+    background: var(--b11);
+}
+
+#b12:before {
+    background: var(--b12);
+}
+
+#c1:before {
+    background: var(--c1);
+}
+
+#c2:before {
+    background: var(--c2);
+}
+
+#c3:before {
+    background: var(--c3);
+}
+
+#c4:before {
+    background: var(--c4);
+}
+
+#c5:before {
+    background: var(--c5);
+}
+
+#c6:before {
+    background: var(--c6);
+}
+
+#c7:before {
+    background: var(--c7);
+}
+
+#c8:before {
+    background: var(--c8);
+}
+
+#c9:before {
+    background: var(--c9);
+}
+
+#c10:before {
+    background: var(--c10);
+}
+
+#c11:before {
+    background: var(--c11);
+}
+
+#c12:before {
+    background: var(--c12);
+}
+
+#d1:before {
+    background: var(--d1);
+}
+
+#d2:before {
+    background: var(--d2);
+}
+
+#d3:before {
+    background: var(--d3);
+}
+
+#d4:before {
+    background: var(--d4);
+}
+
+#d5:before {
+    background: var(--d5);
+}
+
+#d6:before {
+    background: var(--d6);
+}
+
+#d7:before {
+    background: var(--d7);
+}
+
+#d8:before {
+    background: var(--d8);
+}
+
+#d9:before {
+    background: var(--d9);
+}
+
+#d10:before {
+    background: var(--d10);
+}
+
+#d11:before {
+    background: var(--d11);
+}
+
+#d12:before {
+    background: var(--d12);
+}
+
+#e1:before {
+    background: var(--e1);
+}
+
+#e2:before {
+    background: var(--e2);
+}
+
+#e3:before {
+    background: var(--e3);
+}
+
+#e4:before {
+    background: var(--e4);
+}
+
+#e5:before {
+    background: var(--e5);
+}
+
+#e6:before {
+    background: var(--e6);
+}
+
+#e7:before {
+    background: var(--e7);
+}
+
+#e8:before {
+    background: var(--e8);
+}
+
+#e9:before {
+    background: var(--e9);
+}
+
+#e10:before {
+    background: var(--e10);
+}
+
+#e11:before {
+    background: var(--e11);
+}
+
+#e12:before {
+    background: var(--e12);
+}
+
+#f1:before {
+    background: var(--f1);
+}
+
+#f2:before {
+    background: var(--f2);
+}
+
+#f3:before {
+    background: var(--f3);
+}
+
+#f4:before {
+    background: var(--f4);
+}
+
+#f5:before {
+    background: var(--f5);
+}
+
+#f6:before {
+    background: var(--f6);
+}
+
+#f7:before {
+    background: var(--f7);
+}
+
+#f8:before {
+    background: var(--f8);
+}
+
+#f9:before {
+    background: var(--f9);
+}
+
+#f10:before {
+    background: var(--f10);
+}
+
+#f11:before {
+    background: var(--f11);
+}
+
+#f12:before {
+    background: var(--f12);
+}
+
+#g1:before {
+    background: var(--g1);
+}
+
+#g2:before {
+    background: var(--g2);
+}
+
+#g3:before {
+    background: var(--g3);
+}
+
+#g4:before {
+    background: var(--g4);
+}
+
+#g5:before {
+    background: var(--g5);
+}
+
+#g6:before {
+    background: var(--g6);
+}
+
+#g7:before {
+    background: var(--g7);
+}
+
+#g8:before {
+    background: var(--g8);
+}
+
+#g9:before {
+    background: var(--g9);
+}
+
+#g10:before {
+    background: var(--g10);
+}
+
+#g11:before {
+    background: var(--g11);
+}
+
+#g12:before {
+    background: var(--g12);
+}
+
+#h1:before {
+    background: var(--h1);
+}
+
+#h2:before {
+    background: var(--h2);
+}
+
+#h3:before {
+    background: var(--h3);
+}
+
+#h4:before {
+    background: var(--h4);
+}
+
+#h5:before {
+    background: var(--h5);
+}
+
+#h6:before {
+    background: var(--h6);
+}
+
+#h7:before {
+    background: var(--h7);
+}
+
+#h8:before {
+    background: var(--h8);
+}
+
+#h9:before {
+    background: var(--h9);
+}
+
+#h10:before {
+    background: var(--h10);
+}
+
+#h11:before {
+    background: var(--h11);
+}
+
+#h12:before {
+    background: var(--h12);
+}
+
+#i1:before {
+    background: var(--i1);
+}
+
+#i2:before {
+    background: var(--i2);
+}
+
+#i3:before {
+    background: var(--i3);
+}
+
+#i4:before {
+    background: var(--i4);
+}
+
+#i5:before {
+    background: var(--i5);
+}
+
+#i6:before {
+    background: var(--i6);
+}
+
+#i7:before {
+    background: var(--i7);
+}
+
+#i8:before {
+    background: var(--i8);
+}
+
+#i9:before {
+    background: var(--i9);
+}
+
+#i10:before {
+    background: var(--i10);
+}
+
+#i11:before {
+    background: var(--i11);
+}
+
+#i12:before {
+    background: var(--i12);
+}
+
+#j1:before {
+    background: var(--j1);
+}
+
+#j2:before {
+    background: var(--j2);
+}
+
+#j3:before {
+    background: var(--j3);
+}
+
+#j4:before {
+    background: var(--j4);
+}
+
+#j5:before {
+    background: var(--j5);
+}
+
+#j6:before {
+    background: var(--j6);
+}
+
+#j7:before {
+    background: var(--j7);
+}
+
+#j8:before {
+    background: var(--j8);
+}
+
+#j9:before {
+    background: var(--j9);
+}
+
+#j10:before {
+    background: var(--j10);
+}
+
+#j11:before {
+    background: var(--j11);
+}
+
+#j12:before {
+    background: var(--j12);
+}
+
+#k1:before {
+    background: var(--k1);
+}
+
+#k2:before {
+    background: var(--k2);
+}
+
+#k3:before {
+    background: var(--k3);
+}
+
+#k4:before {
+    background: var(--k4);
+}
+
+#k5:before {
+    background: var(--k5);
+}
+
+#k6:before {
+    background: var(--k6);
+}
+
+#k7:before {
+    background: var(--k7);
+}
+
+#k8:before {
+    background: var(--k8);
+}
+
+#k9:before {
+    background: var(--k9);
+}
+
+#k10:before {
+    background: var(--k10);
+}
+
+#k11:before {
+    background: var(--k11);
+}
+
+#k12:before {
+    background: var(--k12);
+}

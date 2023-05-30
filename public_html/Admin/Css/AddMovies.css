@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root {
+    --background-color: #212529;
+    --main-color: #D72323;
+    --primary-color: #EEEEEE;
+    --secondary-color: #3A4750;
+    --grey-color: #d3d3d3;
+    --PrimaryFont: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+html,
+body {
+    max-width: 100vw;
+    height: 1300px;
+    position: relative;
+    background-color: var(--background-color);
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    margin-left: 0;
+    color: white;
+    margin-right: 0;
+}
+
+.heading {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3.5rem;
+}
+
+.subheading1 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.subheading2 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.normaltext {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.paragraph {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.minitext {
+    /* used = 'ex. Thriller/Adventure/Drama' purposes   */
+    position: relative;
+    color: var(--grey-color);
+    font-size: 1.6rem;
+}
+
+#header {
+    height: 60px;
+    background-color: #1b1b1b;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 200px !important;
+    height: 45px !important;
+    width: 254px;
+    height: 60px;
+    object-fit: contain;
+}
+
+#header .visitwebsite {
+    height: 40px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--main-color);
+    color: var(--primary-color);
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    border-radius: 12px;
+    margin-left: 100px;
+}
+
+#parentContainer {
+    position: relative;
+    top: 70px;
+    width: 100vw;
+    overflow-y: hidden;
+    height: 1200px;
+    display: flex;
+    gap: 20px;
+}
+
+#parentContainer .AdminOptions {
+    width: 300px;
+    height: 100%;
+    border-radius: 12px;
+}
+
+#parentContainer .AddMovies {
+    width: 1000px;
+    height: 100%;
+    overflow-y: auto;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.AdminOptions .optionList {
+    margin: 0;
+    padding: 0;
+}
+
+.AdminOptions .optionList .opt {
+    list-style: none;
+    /* background-color: #264653; */
+    background-color: white;
+    color: var(--background-color);
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.opt.active {
+    background-color: var(--main-color) !important;
+    color: white !important;
+}
+
+.AddMovieheading {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.AddMovieheading h3 {
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: var(--PrimaryFont);
+}
+
+.addMovieContainer {
+    width: 100%;
+    height: 90%;
+    font-size: 20px;
+    font-family: var(--PrimaryFont);
+}
+
+.addMovieContainer .formElements {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.addMovieContainer .formElementsImages {
+    width: 100%;
+    height: 23%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.addMovieContainer .formElementsSubmit {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.addMovieContainer .formElements .FEcontainer1,
+.addMovieContainer .formElements .FEcontainer2 {
+    width: 40%;
+}
+
+.FEcontainer1,
+.FEcontainer2 {
+    width: 30%;
+    height: 80%;
+}
+
+.FEcontainer1 .myFormInput,
+.FEcontainer2 .myFormInput {
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-inline-start: 5px;
+}
+
+.myFormInputCrew {
+    width: 90%;
+    height: 35px;
+    margin-top: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-inline-start: 5px;
+}
+
+.addcrew {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--main-color);
+    color: white;
+    font-family: var(--PrimaryFont);
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
+
+.getMovieImage,
+.getMoviePoster {
+    border: 1px solid red;
+}
+
+.crewElement {
+    height: auto;
+    width: 400px;
+}
+
+.crewElement2 {
+    height: auto;
+    width: 400px;
+}
+
+.myFormInputCrew .addMovieContainer .formElements .FEcontainer1 h4,
+.myFormInputCrew .addMovieContainer .formElements .FEcontainer2 h4 {
+    font-size: 20px;
+    font-family: var(--PrimaryFont);
+}
+
+.FEcontainer1 .MovieImage,
+.FEcontainer2 .MovieImage2,
+.MovieImage3 {
+    display: none;
+}
+
+.FEcontainer1sp .MovieImage {
+    display: none;
+}
+
+.FEcontainer1 label,
+.FEcontainer2 label {
+    width: 70%;
+    height: 70%;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 41px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.FEcontainer1sp {
+    margin-left: 59px;
+}
+
+.FEcontainer1sp .fa-solid {
+    color: black;
+    font-size: 25px;
+}
+
+.FEcontainer1sp label {
+    width: 215px;
+    height: 145px;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 41px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.addMovieContainer .formElementsImages .FEcontainer1 .fa-solid,
+.addMovieContainer .formElementsImages .FEcontainer2 .fa-solid {
+    color: black;
+    font-size: 25px;
+}
+
+.thisbox {
+    margin-left: 15px;
+    width: 434px;
+}
+
+.formElementsSubmit .submitform {
+    height: 40px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--main-color);
+    color: var(--primary-color);
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    border-radius: 12px;
+    margin-left: 100px;
+    border: none;
+    width: 200px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.crewcastContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.crewcastContainer1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: 19%;
+}
+
+.AdminOptions .optionList .opt i {
+    margin-right: 20px;
+}
+
+.castBox,
+.crewBox {
+    margin-top: 5px;
+}
+
+
+/* loader animation ------------------------------*/
+
+@keyframes ldio-gydubrlv2y9 {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.ldio-gydubrlv2y9 div {
+    box-sizing: border-box!important
+}
+
+.ldio-gydubrlv2y9>div {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    top: 14px;
+    left: 14px;
+    border-radius: 50%;
+    border: 8px solid #000;
+    border-color: #d72323 transparent #d72323 transparent;
+    animation: ldio-gydubrlv2y9 1s linear infinite;
+}
+
+.ldio-gydubrlv2y9>div:nth-child(2) {
+    border-color: transparent
+}
+
+.ldio-gydubrlv2y9>div:nth-child(2) div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+}
+
+.ldio-gydubrlv2y9>div:nth-child(2) div:before,
+.ldio-gydubrlv2y9>div:nth-child(2) div:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: -8px;
+    left: 24px;
+    background: #d72323;
+    border-radius: 50%;
+    box-shadow: 0 64px 0 0 #d72323;
+}
+
+.ldio-gydubrlv2y9>div:nth-child(2) div:after {
+    left: -8px;
+    top: 24px;
+    box-shadow: 64px 0 0 0 #d72323;
+}
+
+.loadingio-spinner-dual-ring-pi6b1155i7 {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.ldio-gydubrlv2y9 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+    /* see note above */
+}
+
+.ldio-gydubrlv2y9 div {
+    box-sizing: content-box;
+}
+
+
+/* generated by https://loading.io/ */
+
+
+/* --------------------- */

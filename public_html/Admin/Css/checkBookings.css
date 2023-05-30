@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root {
+    --background-color: #212529;
+    --main-color: #D72323;
+    --primary-color: #EEEEEE;
+    --secondary-color: #3A4750;
+    --grey-color: #d3d3d3;
+    --PrimaryFont: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100vw;
+    height: 800px;
+    position: relative;
+    background-color: var(--background-color) !important;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.heading {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3.5rem;
+}
+
+.subheading1 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.subheading2 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.normaltext {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.paragraph {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.minitext {
+    /* used = 'ex. Thriller/Adventure/Drama' purposes   */
+    position: relative;
+    color: var(--grey-color);
+    font-size: 1.6rem;
+}
+
+#header {
+    height: 60px;
+    background-color: #1b1b1b;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 200px !important;
+    height: 45px !important;
+    width: 254px;
+    height: 60px;
+    object-fit: contain;
+}
+
+#header .visitwebsite {
+    height: 40px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--main-color);
+    color: var(--primary-color);
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    border-radius: 12px;
+    margin-left: 100px;
+}
+
+#parentContainer {
+    position: relative;
+    top: 70px;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    gap: 20px;
+}
+
+#parentContainer .AdminOptions {
+    width: 300px;
+    height: 100%;
+    border-radius: 12px;
+}
+
+#parentContainer .Theaterdetails {
+    width: 1000px;
+    height: 80%;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.AdminOptions .optionList {
+    margin: 0;
+    padding: 0;
+}
+
+.AdminOptions .optionList .opt {
+    list-style: none;
+    /* background-color: #264653; */
+    background-color: white;
+    color: var(--background-color);
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 600;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid white;
+}
+
+.opt.active {
+    background-color: var(--main-color) !important;
+    color: white !important;
+}
+
+.AdminOptions .optionList .opt i {
+    margin-right: 20px;
+}
+
+#parentContainer .Theaterdetails .theaterHeading {
+    width: 100%;
+}
+
+#parentContainer .Theaterdetails .theaterHeading h3 {
+    font-family: var(--PrimaryFont);
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+#parentContainer .Theaterdetails .TheaterOptions {
+    width: 96%;
+    margin-left: 17px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#parentContainer .Theaterdetails .TheaterOptions .line2 {
+    width: 30px;
+    height: 5px;
+    position: relative;
+    bottom: 4px;
+    left: 65px;
+    transition: ease-in .5s;
+    border-radius: 5px;
+    background-color: var(--main-color);
+}
+
+#parentContainer .Theaterdetails .TheaterOptions .ThSearch {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 6px;
+}
+
+#parentContainer .Theaterdetails .TheaterOptions .ThSearch h3 {
+    color: black;
+    font-size: 21px;
+    margin-left: 10px;
+    font-family: var(--PrimaryFont);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+
+#parentContainer .Theaterdetails .TheaterOptions .ThSearch input {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-family: var(--PrimaryFont);
+    font-weight: 600;
+    padding-inline-start: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#parentContainer .Theaterdetails .TheaterOptions .ThAddtheaters {
+    width: 300px;
+    height: 50px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#parentContainer .Theaterdetails .TheaterOptions .ThAddtheaters .btn {
+    background-color: white;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--PrimaryFont);
+    font-weight: 600;
+    align-items: center;
+}
+
+#parentContainer .Theaterdetails .theatersTable {
+    width: 96%;
+    height: 80%;
+    margin-top: 10px;
+    margin-left: 17px;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#parentContainer .Theaterdetails .theatersTable .bkoptions {
+    width: 99%;
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#parentContainer .Theaterdetails .theatersTable .bkoptions .part1 {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#parentContainer .Theaterdetails .theatersTable .search {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: var(--PrimaryFont);
+    padding-inline-start: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#parentContainer .Theaterdetails .theatersTable .bkoptions .part2 {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#parentContainer .Theaterdetails .theatersTable .bkoptions .part2 .btn {
+    background-color: var(--background-color);
+    width: 150px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--PrimaryFont);
+    font-size: 18px;
+    font-weight: 600;
+    align-items: center;
+}
+
+#parentContainer .Theaterdetails .theatersTable .bkoptions .part2 .date {
+    background-color: var(--background-color);
+    width: 150px;
+    height: 40px;
+    color: white;
+    border: none;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    font-family: var(--PrimaryFont);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#parentContainer .Theaterdetails .theatersTable .bookingslides {
+    width: 99%;
+    margin: 5px;
+    margin-top: 20px;
+    height: 360px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#parentContainer .Theaterdetails .theatersTable .bookingslides .card {
+    width: 49%;
+    height: 300px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 12px;
+    color: white !important;
+    background-image: linear-gradient(90deg, #ED213A, #93291E);
+}
+
+.theatersTable .bookingslides .card .part1 {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid white;
+}
+
+.theatersTable .bookingslides .card .part1 .booking,
+.theatersTable .bookingslides .card .part1 .PaymentDetail {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theatersTable .bookingslides .card .bookingId,
+.theatersTable .bookingslides .card .bookingDate,
+.theatersTable .bookingslides .card .username,
+.theatersTable .bookingslides .card .PamentMethod {
+    margin: 10px;
+    font-family: var(--PrimaryFont);
+    font-weight: 600;
+}
+
+.theatersTable .bookingslides .card span {
+    font-family: var(--PrimaryFont);
+    font-size: 18px;
+    color: white;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.theatersTable .bookingslides .card .username i {
+    margin-right: 10px;
+}
+
+#parentContainer .Theaterdetails .theatersTable .bkoptions .part2 .Paymenttype {
+    background-color: var(--background-color);
+    width: 150px;
+    height: 40px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: var(--PrimaryFont);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ActiveBookings {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: right ease-in .5s;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #f5ebe0;
+}
+
+.BookingCanceled,
+.Bookinghistory {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 1000px;
+    transition: right ease-in .5s;
+    overflow-y: auto;
+    background-color: #f5ebe0;
+}
+
+.form-switch {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+#parentContainer .Theaterdetails .TheaterOptions .myline {
+    width: 30px;
+    height: 5px;
+    position: relative;
+    bottom: 4px;
+    left: 40px;
+    transition: ease-in .5s;
+    border-radius: 5px;
+    background-color: var(--main-color);
+}

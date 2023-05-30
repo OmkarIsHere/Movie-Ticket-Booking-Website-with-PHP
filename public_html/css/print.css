@@ -1,0 +1,255 @@
+/* reseting */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+}
+
+html {
+    background-color: #161616;
+    color: black;
+}
+
+#logo{
+    width: 113px;
+    position: relative;
+    bottom: 9px;
+}
+
+#ticket-system{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ticket-section h1 {
+    text-align: center;
+    color: white;
+    margin: 2px 0 7px;
+}
+
+#ticket-section {
+    width: 320px;
+}
+
+#movie-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*#theatre-name, #date-time, #seat{
+     font-weight: 300;
+}
+
+#seat-type{
+     font-weight: 400;
+} */
+
+#movie-details p {
+    font-size: 0.9rem;
+}
+
+#movie-img {
+    margin: 0 6px 0 0;
+}
+
+#poster {
+    height: 160px;
+    border-radius: 10px;
+}
+
+#seat-info {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #00000061;
+    border-top: 1px solid #00000061;
+    padding: 4px 0;
+    width: 100%;
+}
+#payment-info{
+    border-bottom: 1px solid #00000061;
+    padding: 4px 0;
+}
+
+#seat-info p {
+    font-size: 0.98rem;
+}
+
+#payment-info {
+    width: 100%;
+}
+
+#payment-info div {
+    display: flex;
+    flex-direction: row;
+}
+
+#ticket-price-div,
+#con-fees-div,
+#gst-div,
+#total-pay-div {
+    position: relative;
+}
+
+#ticket-price-text,
+#con-fees-text,
+#gst-text,
+#total-pay-text {
+    font-size: 0.9rem;
+}
+
+#ticket-price,
+#con-fees,
+#gst,
+#total-pay {
+    font-size: 0.99rem;
+    position: absolute;
+    right: 0;
+}
+
+#total-pay,
+#total-pay-text {
+    font-size: 1.2rem;
+}
+
+#qr-code {
+    height: 120px;
+}
+#qr-code-div {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+#qr-code-div::before {
+    content: '';
+    background: linear-gradient(to right, #fff 50%, #161616 50%);
+    background-size: 22px 4px, 100% 4px;
+    height: 4px;
+    width: 90%;
+    display: block;
+    left: 0;
+    right: 0;
+    top: -1px;
+    position: absolute;
+    margin: auto;
+}
+
+#qr-code-div p {
+    font-size: 0.8rem;
+}
+
+#printer {
+    width: 100%;
+    height: 12px;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+#transform{
+    overflow: hidden;
+    margin-top: -12px;
+    /* width: 99%; */
+    position: relative;
+    left: 4px;
+}
+#ticket-wrapper{
+    transform: translateY(-510px);
+    animation-duration: 2.5s;
+    animation-delay: 500ms;
+    animation-name: print;
+    animation-fill-mode: forwards;
+}
+#ticket{
+background-color: white;
+padding: 5px;
+border-radius: 16px;
+padding: 16px;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.div2 {
+    display: flex;
+    justify-content: center;
+}
+
+#print {
+    display: inline-block;
+    /* padding: 0.8rem 1.8rem; */
+    /* line-height: 1rem; */
+    background-color: white;
+    border: 0.1rem solid grey;
+    color: black;
+    font-size: 1rem;
+    /* font-weight: 600; */
+    text-decoration: none;
+    font-style: normal;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    transition: all .4s ease-out 0s;
+    position: relative;
+    border-radius: 5px;
+    margin: 16px 30px 0 0;
+    width: 120px;
+    height: 29px;
+    text-align: center;
+}
+
+#print:hover {
+    background-color: red;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+#home {
+    margin: 16px 0 0 30px;
+    /* display: inline-block; */
+    /* padding: 0.8rem 1.8rem; */
+    /* line-height: 1rem; */
+    background-color: #D72323;
+    border: 0.1rem solid #D72323;
+    color:#EEEEEE;
+    font-size: 1rem;
+    /* font-weight: 600; */
+    text-decoration: none;
+    font-style: normal;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    transition: all .4s ease-out 0s;
+    position: relative;
+    border-radius: 5px;
+    width: 120px;
+    height: 29px;
+    text-align: center;
+}
+
+#home:hover {
+    background-color: red;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+@keyframes print {
+    0% {
+        transform: translateY(-510px);
+   }
+    35% {
+        transform: translateY(-395px);
+   }
+    70% {
+        transform: translateY(-140px);
+   }
+    100% {
+        transform: translateY(0);
+   }
+}
+
+

@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root {
+    --background-color: #212529;
+    --main-color: #D72323;
+    --primary-color: #EEEEEE;
+    --secondary-color: #3A4750;
+    --grey-color: #d3d3d3;
+    --PrimaryFont: 'Lato', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100vw;
+    height: 2000px;
+    position: relative;
+    background-color: var(--background-color);
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.heading {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3.5rem;
+}
+
+.subheading1 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.subheading2 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.normaltext {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.paragraph {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.minitext {
+    /* used = 'ex. Thriller/Adventure/Drama' purposes   */
+    position: relative;
+    color: var(--grey-color);
+    font-size: 1.6rem;
+}
+
+#header {
+    height: 60px;
+    background-color: #1b1b1b;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#header .SearchContainer {
+    width: calc(100% - 60%);
+    height: 40px;
+    border-radius: 5px;
+    background-color: #28282B;
+    border: 1px solid #343434;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .SearchContainer .searchbar {
+    width: 28rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    padding-inline-start: 0.4rem;
+    height: 2.4rem;
+    border: none;
+    outline: none;
+    color: white;
+    background: transparent;
+    font-family: var(--PrimaryFont);
+}
+
+ ::placeholder {
+    color: #ced4da;
+}
+
+.SearchBtn {
+    width: 3rem;
+    font-size: 1.15rem;
+    height: 2.4rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#header .LogInContainer {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 25px;
+}
+
+#header .LogInContainer .loginSignUpBtn {
+    width: 7.25rem;
+    height: 2.45rem;
+    font-family: var(--PrimaryFont);
+    font-size: 1.27rem;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background-color: #D72323;
+}
+
+#header .LogInContainer .hambergerMenu {
+    background-color: transparent;
+    color: var(--main-color);
+    height: 2.45rem;
+    font-size: 2rem;
+    width: 2.65rem;
+    border: none;
+}
+
+#header .LocationContainer {
+    width: calc(100% - 80%);
+    height: 40px;
+    border-radius: 5px;
+    background-color: #28282B;
+    border: 1px solid #343434;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#header .LocationContainer .locationImg {
+    width: 1.57rem;
+    height: 1.57rem;
+}
+
+#header .LocationContainer .location {
+    font-size: 1.25rem;
+    height: 1.57rem;
+    width: 13rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: var(--PrimaryFont);
+}
+
+#header .LocationContainer .location option {
+    color: black;
+    font-family: var(--PrimaryFont);
+}
+
+.logo {
+    width: 200px !important;
+    height: 45px !important;
+    width: 254px;
+    height: 60px;
+    object-fit: contain;
+}
+
+#header .SearchBtn2,
+#header .LocationBtn2 {
+    display: none;
+    height: 2.45rem;
+    width: 2.65rem;
+    margin: 5px;
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 1.56rem;
+}
+
+@media (max-width: 800px) {
+    .logo {
+        height: 40px !important;
+        position: relative;
+        left: -10px;
+    }
+    #header .SearchContainer {
+        position: absolute;
+        top: calc(100% + 5px);
+        width: calc(100% - 20px);
+        right: 50%;
+        transform: translateX(50%);
+        display: none;
+    }
+    #header .LocationContainer {
+        position: absolute;
+        top: calc(100% + 5px);
+        width: calc(100% - 20px);
+        right: 50%;
+        transform: translateX(50%);
+        display: none;
+    }
+    #header .LocationContainer .location {
+        width: calc(100% - 70px);
+    }
+    #header .SearchBtn2 {
+        display: block !important;
+    }
+    #header .LocationBtn2 {
+        display: block !important;
+    }
+    #header .hambergerMenu {
+        display: block;
+    }
+    #header .LogInContainer {
+        width: 50px;
+        margin-right: 70px;
+        position: absolute;
+        top: 8px;
+        right: 11px;
+    }
+    #menuToggle {
+        position: absolute !important;
+        top: 10px !important;
+    }
+    #menuToggle span {
+        width: 24px !important;
+        height: 3px !important;
+        transform-origin: 0px 2px !important;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1366px) {
+    #header .SearchContainer {
+        display: flex !important;
+    }
+    #header .LocationContainer {
+        display: flex !important;
+    }
+}
+
+
+/* ------------------ */
+
+a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+    margin: 15px;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+#menuToggle {
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+
+/*
+ * Just a quick hamburger
+ */
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #ededed;
+}
+
+
+/*
+ * But let's hide the middle one.
+ */
+
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+
+
+/* #menu {
+    position: absolute;
+    width: 500px;
+    height: 100vh;
+    top: 141px;
+    margin: -100px 0 0 0;
+    right: -100px;
+    background: white;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+} */
+
+
+/* .slideMenu {
+    position: relative;
+    width: 500px;
+    height: 100vh;
+    z-index: 5;
+    right: -100px;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+} */
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+
+/*
+ * And let's fade it in from the left
+ */
+
+#menuToggle input:checked~ul {
+    transform: none;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    #header {
+        height: 40px;
+        display: flex !important;
+        align-items: start !important;
+    }
+    #menu,
+    #myMenuBar {
+        width: 308px !important;
+    }
+    #myMenuBar {
+        top: 40px !important;
+    }
+    .gift {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    .MyloginButton h3 {
+        font-size: 14px;
+    }
+    .MyloginButton .loginRegister {
+        height: 30px !important;
+        font-size: 14px !important;
+        padding: 5px !important;
+    }
+    .Register {
+        height: 40px !important;
+    }
+    .MyloginButton {
+        height: 40px !important;
+    }
+    #menu li {
+        padding: 0px 0 !important;
+        font-size: 17px !important;
+    }
+    .toggle-collapse {
+        position: relative !important;
+        right: 5px !important;
+        font-size: 25px !important;
+        bottom: 5px;
+    }
+}
+
+
+/* -------------------------------------------- */
+
+.toggle-collapse {
+    background: transparent;
+    position: relative;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 35px;
+    border: none;
+}
+
+.toggle-icon {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    right: 40px;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#myMenuBar {
+    position: fixed;
+    right: -400px;
+    z-index: 5;
+    top: 60px;
+    width: 400px;
+    height: 100vh;
+    transition: right 1s;
+    background: white;
+}
+
+#menu {
+    list-style: none;
+    margin: 0;
+}
+
+.Register {
+    width: 450px;
+    height: 70px;
+    background-color: var(--secondary-color);
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    right: 40px;
+    top: 0px;
+}
+
+.Register h2 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 15px;
+    color: white;
+}
+
+.MyloginButton {
+    width: 450px;
+    height: 70px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    right: 40px;
+    top: 0px;
+    box-shadow: 3px 4px 4px #a19ba1c7;
+}
+
+.MyloginButton .gift {
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+}
+
+.MyloginButton h3 {
+    margin-left: 10px;
+}
+
+.MyloginButton .loginRegister {
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    height: 40px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#FooterContainer {
+    width: 100vw;
+    height: 70vh;
+    background: black;
+    background-image: url(../image/footerbg.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+#FooterContainer .Footerpart1 {
+    width: 99%;
+    height: 45vh;
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#FooterContainer .Footerpart2 {
+    width: 99%;
+    height: 25vh;
+}
+
+#FooterContainer .Footerpart1 .col1-f1 {
+    width: 380px;
+    height: 100%;
+    margin: 10px;
+}
+
+#FooterContainer .Footerpart1 .col2-f1 {
+    width: 406px;
+    height: 100%;
+    margin: 10px;
+}
+
+#FooterContainer .Footerpart1 .col3-f1 {
+    width: 300px;
+    height: 100%;
+    margin: 10px;
+}
+
+#FooterContainer .Footerpart1 h3 {
+    color: #ffce26;
+    font-family: Verdana;
+    font-size: 16px !important;
+    font-weight: 500;
+    position: relative;
+    top: 40px;
+    left: 14px;
+    margin: 0px 0px 15px 0px;
+}
+
+#FooterContainer .Footerpart1 ul li a {
+    Text-decoration: none;
+    color: #999292;
+    font-family: Verdana;
+    font-size: 16px !important;
+    font-weight: 500;
+    letter-spacing: 0.3mm;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#FooterContainer .Footerpart1 ul {
+    position: relative;
+    top: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+#FooterContainer .Footerpart1 ul li {
+    margin-top: 5px;
+}
+
+#FooterContainer .Footerpart1 ul li span {
+    position: absolute;
+    left: 261px;
+}
+
+#FooterContainer .Footerpart1 ul li a:hover {
+    color: #ffce26;
+}
+
+#FooterContainer .Footerpart2 .row1-f2 {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#FooterContainer .Footerpart2 .row2-f2 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999292;
+    font-family: Verdana;
+    font-size: 13px !important;
+}
+
+#FooterContainer .Footerpart2 .row1-f2 .supportimage {
+    width: 112px;
+    height: 60px;
+    margin: 10px;
+}
+
+#FooterContainer .Footerpart2 .row1-f2 .supportImageContainer {
+    width: 244px;
+    display: flex;
+}
+
+#FooterContainer .Footerpart2 .row1-f2 a {
+    margin: 10px;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 19px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+}
+
+#FooterContainer .Footerpart2 .row1-f2 .policyConditiionTerms {
+    margin-left: 50px;
+    display: flex;
+}
+
+#FooterContainer .Footerpart2 .row1-f2 a:hover {
+    color: #ffce26;
+}
+
+#FooterContainer .Footerpart2 .row1-f2 .socialmediaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#FooterContainer .Footerpart2 .row1-f2 .socialmedia {
+    width: 32px;
+    height: 32px;
+    margin: 20px;
+}
+
+#FooterContainer .Footerpart2 .row1-f2 .socialmediastart {
+    width: 32px;
+    height: 32px;
+    margin-left: 70px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #FooterContainer {
+        height: 1010px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    #FooterContainer .Footerpart1 {
+        height: 135vh;
+        display: flex;
+        top: 0 !important;
+        flex-direction: column;
+    }
+    #FooterContainer .Footerpart1 .col3-f1 {
+        position: relative;
+        right: 51px;
+    }
+    #FooterContainer .Footerpart2 .row1-f2 {
+        width: 100%;
+        margin-top: 20px;
+        height: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #FooterContainer .Footerpart2 .row1-f2 .policyConditiionTerms {
+        margin: 0;
+    }
+    #FooterContainer .Footerpart2 .row2-f2 {
+        text-align: center;
+    }
+    #FooterContainer .Footerpart2 .row1-f2 .socialmediastart {
+        margin-left: 5px;
+    }
+    #FooterContainer .Footerpart2 .row1-f2 .socialmedia {
+        margin-left: 5px;
+    }
+    #searchresult {
+        width: calc(100% - 2px) !important;
+        top: 42px !important;
+        left: 0px !important;
+    }
+}
+
+#searchresult {
+    width: calc(100% - 60%);
+    border: 1px solid var(--secondary-color);
+    position: absolute;
+    top: 56px;
+    border-radius: 5px;
+    background-color: #d8e2dc;
+    left: 262px;
+}
+
+#searchresult .SRli-list {
+    list-style: none;
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 15px;
+    font-family: var(--PrimaryFont);
+    font-size: 17px;
+    margin-left: 0;
+    font-weight: 700;
+}
+
+#searchresult .SRul-list {
+    padding: 0;
+    margin: 0;
+}

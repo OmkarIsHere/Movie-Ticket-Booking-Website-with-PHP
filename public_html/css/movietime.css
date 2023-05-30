@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: #2A3036;
+  --main-color: #D72323;
+  --primary-color: #EEEEEE;
+  --secondary-color: #3A4750;
+  --grey-color: #d3d3d3;
+}
+
+body {
+  width: 98vw;
+  height: auto;
+  /* border: 1px solid red; */
+  font-family: 'Lato', serif !important;
+  background-color: var(--background-color) !important;
+
+}
+
+.part1 {
+  width: 25%;
+  height: auto;
+  /* border: 1px solid rgb(205, 50, 153); */
+}
+
+.part2 {
+  width: 75%;
+  height: 100%;
+  /* border: 1px solid blue; */
+}
+
+.commingsoon {
+  margin: 30px;
+  ;
+  width: 94%;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+
+.content {
+  width: 100%;
+  margin: 5px auto;
+  height: 95%;
+  /* border:1px solid black;*/
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-columns: auto auto auto auto;
+  column-gap: none;
+  row-gap: 1cm;
+  border-radius: 5px;
+}
+
+.card {
+  margin: 5px auto;
+  width: 200px;
+  height: 350px;
+
+  border-radius: 5px;
+
+}
+
+.movieImage {
+
+  width: 200px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 12px grey;
+  transition: .3sec;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+
+}
+
+#fbox,
+#sbox,
+#tbox {
+  row-gap: 5px;
+  margin-left: 10%;
+  width: 80%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+
+.btn {
+
+  margin-left: 10%;
+  margin-top: 5px;
+  padding: 10px 30px;
+  width: 80%;
+  height: 30px;
+  border: 1px solid black !important;
+  border-radius: 5px;
+}
+
+.btn:hover,
+.btn:active {
+  color: rgb(249, 66, 164) !important;
+}
+
+body {
+  background-color: rgb(25, 89, 89);
+}
+
+.click-btn {
+  height: 30px;
+  width: 80px;
+  margin-left: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.filter {
+  width: 100%;
+  height: 50px;
+  margin-left: 30px;
+  font-size: xx-large;
+  color: #fff;
+}
+
+/* .up{
+float: right;
+margin: 10px auto;
+  } */
+.part0 {
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.container {
+  width: 96% !important;
+  height: auto;
+  display: flex;
+  margin-top: 65px;
+  /* border:1px solid violet; */
+}
+
+.click-btn:hover {
+  color: red;
+}

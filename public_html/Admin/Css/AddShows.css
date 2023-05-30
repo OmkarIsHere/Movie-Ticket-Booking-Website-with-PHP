@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root {
+    --background-color: #212529;
+    --main-color: #D72323;
+    --primary-color: #EEEEEE;
+    --secondary-color: #3A4750;
+    --grey-color: #d3d3d3;
+    --PrimaryFont: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+html,
+body {
+    max-width: 100vw;
+    height: 900px;
+    position: relative;
+    background-color: var(--background-color);
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.heading {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3.5rem;
+}
+
+.subheading1 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.subheading2 {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.normaltext {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.paragraph {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.minitext {
+    /* used = 'ex. Thriller/Adventure/Drama' purposes   */
+    position: relative;
+    color: var(--grey-color);
+    font-size: 1.6rem;
+}
+
+#header {
+    height: 60px;
+    background-color: #1b1b1b;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 200px !important;
+    height: 45px !important;
+    width: 254px;
+    height: 60px;
+    object-fit: contain;
+}
+
+#header .visitwebsite {
+    height: 40px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--main-color);
+    color: var(--primary-color);
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    border-radius: 12px;
+    margin-left: 100px;
+}
+
+#parentContainer {
+    position: relative;
+    top: 70px;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#parentContainer .AdminOptions {
+    width: 300px;
+    height: 100%;
+    border-radius: 12px;
+}
+
+#parentContainer .Websitedetails {
+    width: 74%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.AdminOptions .optionList {
+    margin: 0;
+    padding: 0;
+}
+
+.AdminOptions .optionList .opt {
+    list-style: none;
+    /* background-color: #264653; */
+    background-color: white;
+    color: var(--background-color);
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid white;
+}
+
+.AdminOptions .optionList .opt i {
+    margin-right: 20px;
+}
+
+.active {
+    background-color: var(--main-color)!important;
+    color: white !important;
+}
+
+.Sitedetails .fa-solid {
+    margin-right: 10px;
+}
+
+.Sitedetails .heading {
+    display: block !important;
+    width: 100%;
+    height: auto!important;
+}
+
+.Sitedetails .SecondRow {
+    display: block !important;
+    width: 100%;
+    top: 0 !important;
+    height: 70px!important;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center !important;
+    color: white;
+}
+
+.Sitedetails .ThirdRow {
+    width: 100%;
+    height: 80%!important;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sitedetails .ThirdRow .thirdContainer {
+    width: 98%;
+    height: 97%;
+    border-radius: 5px;
+}
+
+.thirdContainer .TcRows {
+    width: 100%;
+    height: 70px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.thirdContainer .TcRows .TcCol {
+    width: 45%;
+    height: 70px;
+}
+
+.thirdContainer .TcRows .TcCol h3 {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: white;
+}
+
+.thirdContainer .TcRows .TcCol .ScreenNo,
+.thirdContainer .TcRows .TcCol .ScreenType,
+.thirdContainer .TcRows .TcCol .Movies,
+.thirdContainer .TcRows .TcCol .Language {
+    margin-top: 5px;
+    width: 75%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    padding-inline-start: 5px;
+}
+
+.special {
+    display: flex;
+    align-items: center;
+}
+
+.Sitedetails .heading .items {
+    width: 98%;
+    height: 30px;
+    margin: 5px;
+}
+
+.Sitedetails {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.graphs {
+    width: 100%;
+    height: 50%;
+}
+
+.Sitedetails .rows {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Sitedetails .rows .panel1 {
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    border-radius: 12px;
+    border-bottom: 5px solid #FF0000;
+}
+
+.Sitedetails .rows .panel2 {
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    border-radius: 12px;
+    border-bottom: 5px solid #FF0099;
+}
+
+.Sitedetails .rows .panel3 {
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    border-radius: 12px;
+    border-bottom: 5px solid #00FF00;
+}
+
+.Sitedetails .rows .panel4 {
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    border-radius: 12px;
+    border-bottom: 5px solid #E6FB04;
+}
+
+.Sitedetails .rows .panel5 {
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    border-radius: 12px;
+    border-bottom: 5px solid #FF6600;
+}
+
+.Sitedetails .rows .panel6 {
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    border-radius: 12px;
+    border-bottom: 5px solid #00ffff;
+}
+
+.Sitedetails .rows .panel7 {
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    border-radius: 12px;
+    border-bottom: 5px solid #0033FF;
+}
+
+.Sitedetails .rows .panel8 {
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    border-radius: 12px;
+    border-bottom: 5px solid #CC00FF;
+}
+
+.Sitedetails .rows .panel9 {
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    border-radius: 12px;
+    border-bottom: 5px solid #53644F;
+}
+
+.Sitedetails .rows h3 {
+    padding-left: 15px;
+    position: relative;
+    font-size: 20px;
+    font-family: var(--PrimaryFont);
+}
+
+.Sitedetails .SecondRow {
+    width: 100%;
+    top: 0 !important;
+    height: 70px!important;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center !important;
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.Sitedetails .rows h4 {
+    padding-left: 15px;
+    position: relative;
+    bottom: 8px;
+}
+
+.datechooserContainer {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.datechooserContainer #datefilter {
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    padding-inline-start: 15px;
+}
+
+.datechooserContainer .fectchrecord {
+    height: 30px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 600;
+    background-color: var(--main-color);
+    color: var(--primary-color);
+    font-family: var(--PrimaryFont);
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+.graphscontainer {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.graphscontainer .graphdiagram {
+    height: 95%;
+    width: 48%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.Bookingsheading {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.Bookingsheading h6 {
+    font-size: 20px;
+    color: white;
+    font-family: var(--PrimaryFont);
+}
+
+.bookingsGraph {
+    width: 98%;
+    height: 90%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theaterImage {
+    border: 1px solid white;
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+}
+
+.theaterImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.bookingsGraph #chart,
+.bookingsGraph #chart2 {
+    background-color: white;
+    width: 95% !important;
+    height: 95% !important;
+    border-radius: 5px;
+}
+
+.AddMovieButton {
+    background-color: var(--main-color);
+    color: white;
+    font-family: var(--PrimaryFont);
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.ThMovieContainer {
+    width: 100%;
+    height: 350px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ThMovieContainer .imageContainer {
+    width: 200px;
+    height: 98%;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.ThMovieContainer .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.ThMovieContainer .TextContainer {
+    width: 60%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.ThMovieContainer .TextContainer h3 {
+    margin: 0 !important;
+    padding: 0!important;
+    font-size: 22px !important;
+    margin-top: 5px!important;
+    margin-left: 5px !important;
+}
+
+.delete {
+    text-decoration: none;
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    font-family: var(--PrimaryFont);
+    font-size: 20px;
+    padding: 5px 70px;
+    border-radius: 5px;
+}
+
+.ThMovieContainer .ButtonContainer {
+    width: 20%;
+    height: 98%;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

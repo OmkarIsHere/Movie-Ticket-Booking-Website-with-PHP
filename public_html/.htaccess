@@ -1,0 +1,2 @@
+php_value display_errors 1
+php_flag output_buffering on
